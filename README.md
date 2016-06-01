@@ -1,6 +1,6 @@
 ## Sway packages for Fedora
 
-[![Build Status](https://travis-ci.org/nrechn/Sway-Fedora.svg?branch=master)](https://travis-ci.org/nrechn/Sway-Fedora)
+[![Build Status](http://img.shields.io/travis/nrechn/Sway-Fedora.svg?style=flat-square)](https://travis-ci.org/nrechn/Sway-Fedora)
 
 <br>
 This repo contains sway package spec file and wlc package spec file in order to build related packages for Fedora users.
