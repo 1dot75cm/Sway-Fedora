@@ -1,5 +1,5 @@
 Name:           sway
-Version:        0.7
+Version:        0.8
 Release:        1%{?dist}
 Summary:        i3-compatible window manager for Wayland
 Group:          User Interface/X
@@ -33,7 +33,9 @@ i3-compatible configuration.
 
 %build
 %cmake \
+       -DCMAKE_BUILD_TYPE=Release \
        -DCMAKE_INSTALL_SYSCONFDIR=/etc \
+       -DCMAKE_INSTALL_PREFIX=/usr \
        -DBUILD_SHARED_LIBS:BOOL=OFF \
        -Dzsh-completions=YES \
        .
@@ -61,6 +63,9 @@ make install DESTDIR=%{buildroot}
 /usr/share/wayland-sessions/sway.desktop
 
 %changelog
+* Fri Jun 24 2016 nrechn <neil@gyz.io> - 0.8-1
+- Upddate to 0.8
+
 * Mon May 23 2016 nrechn <neil@gyz.io> - 0.7-1
 - Upddate to 0.7
 
